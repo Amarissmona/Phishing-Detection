@@ -35,4 +35,5 @@ Browser mein `http://localhost:8501` khul jayega.
 ## 🧠 Model
 - Algorithm: Random Forest Classifier
 - Dataset: [GregaVrbancic/Phishing-Dataset](https://github.com/GregaVrbancic/Phishing-Dataset)
-- Accuracy: ~96.98%
+- Accuracy: ~93% (uses only URL-structure features — no live network/WHOIS lookups needed, so it works reliably anywhere it's deployed)
+- Features analyzed: dots, hyphens, slashes, length, SSL usage, IP-as-domain, URL shorteners, and more — extracted purely from the URL text.
